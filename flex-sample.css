@@ -1,0 +1,48 @@
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .container-3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .container-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .container-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .container-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-1 {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+  }
+  .div-2 {
+    background-color: rgb(218, 145, 93);
+    height: 100px;
+    width: 100px;
+  }
+  .div-3 {
+    background-color: rgb(255, 0, 93);
+    height: 100px;
+    width: 100px;
+  }
