@@ -2,6 +2,7 @@
   <style>
     .body_style {
       margin: 0px;
+      font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
     }
 
     .container {
@@ -102,6 +103,31 @@
 
     .img-class {
       color: #fc8019;
+      cursor: pointer;
+    }
+
+    .content-delivery {
+      background: #2b1e16;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      color: white;
+
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 0;
+    }
+    .content-delivery-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 385px;
+      align-items: center;
+
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 0;
     }
   </style>
 </head>
@@ -111,6 +137,7 @@
     <div class="left-container">
       <div class="header-img-container">
         <img
+          onclick="alert(`make a call`)"
           class="img-class"
           src="data:image/png;base64,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"
         />
@@ -120,7 +147,7 @@
           ></path>
         </svg> -->
 
-        <div style="display: flex; gap: 20px;">
+        <div style="display: flex; gap: 20px">
           <button class="login-button">Log in</button>
           <button class="sign-up-button">Sign Up</button>
         </div>
@@ -170,4 +197,48 @@
       />
     </div>
   </div>
+
+  <div class="content-delivery">
+    <div class="content-delivery-1">
+      <img
+        width="105"
+        height="199"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+      />
+      <h4>No Minimum Order</h4>
+      <h5 style="text-align: center">
+        Order in for yourself or for the group, with no restrictions on order
+        value
+      </h5>
+    </div>
+
+    <div class="content-delivery-1">
+      <img
+        width="105"
+        height="199"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
+      />
+      <h4>Live Order Tracking</h4>
+      <h5 style="text-align: center">
+        Know where your order is at all times, from the restaurant to your
+        doorstep
+      </h5>
+    </div>
+
+    <div class="content-delivery-1">
+      <img
+        width="105"
+        height="199"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
+      />
+      <h4>Lightning-Fast Delivery</h4>
+      <h5 style="text-align: center">
+        Experience Swiggy's superfast delivery for food delivered fresh & on
+        time
+      </h5>
+    </div>
+  </div>
 </body>
+
+
+
