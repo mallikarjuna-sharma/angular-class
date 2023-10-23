@@ -1,0 +1,82 @@
+<head>
+  <style>
+    body {
+      background-color: #5d97e244;
+    }
+    .header1 {
+      font-size: 75px;
+    }
+    .header6 {
+      font-size: 50px;
+    }
+    .button1 {
+      width: 100%;
+      height: 10%;
+      background-color: #1877f2;
+      border-radius: 10px;
+      border-style: initial;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+
+  <script>
+
+    // concepts
+    
+    // data types
+    // string , interger , array , json , boolean
+    // how to decalre a variable
+    // how to decalre a function
+    // how to call a function
+    // how to add two variables
+    // how to print a variable using console.logs
+    // how return variable from a function
+    // how to assign returned value from a function to a variable
+    // example ->let a  = getFunction()
+    // how to call a function from html tags to script tag
+
+    // what is document object
+    // event handlers like onclick 
+
+    let variableName = "good morning";
+    let intergerName = 123123123;
+    let arrayName = [1, 2, 3, 4, 5, 6, false, true, "good"];
+    let booleanName = true;
+    let booName = false;
+    // arguments
+    // functions
+    // varialbe declaration
+    function subtractResults(number1, number2) {
+      // let number1 = 100;
+      // let number2 = 200;
+      let result = number1 * number2;
+      return result;
+    }
+    let resultFromFunction = subtractResults(3000, 2000);
+    console.log("result arrayName -> ", resultFromFunction);
+
+
+   function  userClickedButton(){
+
+        alert('called from userClickedButton ');
+
+    }
+
+    function onInputChange(){
+        console.log('logged from on input change');
+    }
+
+  </script>
+</head>
+
+<body>
+  <h1 class="header1">Here is the html file to learn java script</h1>
+
+  <h6 class="header6">click the below to learn more</h6>
+
+  <input onblur="onInputChange()"  />
+
+  <button  onclick="userClickedButton()"  class="button1">Click me</button>
+</body>
