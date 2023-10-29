@@ -1,0 +1,33 @@
+<head>
+  <script>
+    window.onload = function () {
+      document.getElementById("width").innerHTML =
+        "width = " + window.innerWidth;
+      document.getElementById("height").innerHTML =
+        "height = " + window.innerHeight;
+
+      if (window.innerWidth > 1000) {
+        document.body.style.backgroundColor = "#618ce8a8";
+      } else {
+        document.body.style.backgroundColor = "#00800066";
+      }
+    };
+
+    function goBack() {
+      window.history.back();
+    }
+
+    function goFwd() {
+      window.history.forward();
+    }
+  </script>
+</head>
+
+<body>
+  <h1 id="width">width of the screen</h1>
+
+  <h1 id="height">height of the screen</h1>
+
+  <a onclick="goBack()">Go back</a>
+  <a onclick="goFwd()">Go Front</a>
+</body>

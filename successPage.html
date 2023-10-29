@@ -1,0 +1,100 @@
+<head>
+  <style>
+    #success-table {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #success-table td,
+    #success-table th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #success-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #success-table tr:hover {
+      background-color: #ddd;
+    }
+
+    /* #success-table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #a097a6;
+      color: white;
+    } */
+  </style>
+
+  <script>
+    window.onload = function () {
+      let queryParams = window.location.search;
+      let urlData = queryParams.split(",");
+
+      let userId = urlData[0].replace("?userId=", "");
+      let password = urlData[1].replace("password=", "");
+      let country = urlData[2].replace("country=", "");
+      let zipcode = urlData[3].replace("zipcode=", "");
+      let email = urlData[4].replace("email=", "");
+      let name = urlData[5].replace("name=", "");
+
+      let tableDivs = document.getElementsByTagName("td");
+
+      console.log(tableDivs, "tableDivs");
+
+    //   tableDivs[1].innerHTML = userId;
+      document.getElementById("userid").innerHTML = userId;
+
+      tableDivs[3].innerHTML = password;
+      tableDivs[5].innerHTML = name;
+
+      tableDivs[7].innerHTML = zipcode;
+      tableDivs[9].innerHTML = email;
+      tableDivs[11].innerHTML = country;
+    };
+
+    // function handleClick() {}
+  </script>
+</head>
+
+<body>
+  <div>Sign Up Success</div>
+
+  <div>
+    <table id="success-table">
+      <tr>
+        <td>User Id</td>
+        <td id="userid"></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>name</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Country</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Zip Code</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Email</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <!-- <button onclick="handleClick()">Update me</button> -->
+  </div>
+</body>

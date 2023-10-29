@@ -1,0 +1,184 @@
+<head>
+  <style>
+    button {
+      border: 1px outset blue;
+      background-color: lightBlue;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+      background: rgb(213, 206, 166); /* Old browsers */
+      background: -moz-linear-gradient(
+        top,
+        yellow 0%,
+        rgba(201, 193, 144, 1) 40%,
+        rgba(183, 173, 112, 1) 100%
+      ); /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+        top,
+        yellow 0%,
+        rgba(201, 193, 144, 1) 40%,
+        rgba(183, 173, 112, 1) 100%
+      ); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(
+        to bottom,
+        yellow 0%,
+        rgba(201, 193, 144, 1) 40%,
+        rgba(183, 173, 112, 1) 100%
+      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
+    }
+    button:hover {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+
+  <script>
+    function on1Click() {
+      if (document.getElementById("math").innerText.length) {
+        document.getElementById("text-2").innerHTML =
+          document.getElementById("text-2").innerText + "1";
+        return;
+      }
+
+      document.getElementById("text").innerHTML =
+        document.getElementById("text").innerText + "1";
+    }
+    function on2Click() {
+      if (document.getElementById("math").innerText.length) {
+        document.getElementById("text-2").innerHTML =
+          document.getElementById("text-2").innerText + "2";
+        return;
+      }
+
+      document.getElementById("text").innerHTML =
+        document.getElementById("text").innerText + "2";
+    }
+    function on3Click() {
+      if (document.getElementById("math").innerText.length) {
+        document.getElementById("text-2").innerHTML =
+          document.getElementById("text-2").innerText + "3";
+        return;
+      }
+
+      document.getElementById("text").innerHTML =
+        document.getElementById("text").innerText + "3";
+    }
+    function on4Click() {
+      if (document.getElementById("math").innerText.length) {
+        document.getElementById("text-2").innerHTML =
+          document.getElementById("text-2").innerText + "4";
+        return;
+      }
+
+      document.getElementById("text").innerHTML =
+        document.getElementById("text").innerText + "4";
+    }
+    function on5Click() {
+      if (document.getElementById("math").innerText.length) {
+        document.getElementById("text-2").innerHTML =
+          document.getElementById("text-2").innerText + "5";
+        return;
+      }
+
+      document.getElementById("text").innerHTML =
+        document.getElementById("text").innerText + "5";
+    }
+    function on6Click() {
+      if (document.getElementById("math").innerText.length) {
+        document.getElementById("text-2").innerHTML =
+          document.getElementById("text-2").innerText + "6";
+        return;
+      }
+
+      document.getElementById("text").innerHTML =
+        document.getElementById("text").innerText + "6";
+    }
+    function on7Click() {
+      if (document.getElementById("math").innerText.length) {
+        document.getElementById("text-2").innerHTML =
+          document.getElementById("text-2").innerText + "7";
+        return;
+      }
+
+      document.getElementById("text").innerHTML =
+        document.getElementById("text").innerText + "7";
+    }
+    function on8Click() {
+      if (document.getElementById("math").innerText.length) {
+        document.getElementById("text-2").innerHTML =
+          document.getElementById("text-2").innerText + "8";
+        return;
+      }
+
+      document.getElementById("text").innerHTML =
+        document.getElementById("text").innerText + "8";
+    }
+    function on9Click() {
+      if (document.getElementById("math").innerText.length) {
+        document.getElementById("text-2").innerHTML =
+          document.getElementById("text-2").innerText + "9";
+        return;
+      }
+
+      document.getElementById("text").innerHTML =
+        document.getElementById("text").innerText + "9";
+    }
+    function onClear() {
+      document.getElementById("text").innerHTML = "";
+      document.getElementById("math").innerHTML = "";
+      document.getElementById("text-2").innerHTML = "";
+    }
+
+    function onaddClick() {
+      document.getElementById("math").innerHTML = "+";
+    }
+
+    function onEqualClick() {
+      let firstElement = document.getElementById("text").innerText;
+      let secondElement = document.getElementById("text-2").innerText;
+      let mathSymbol = document.getElementById("math").innerText;
+
+      if (firstElement.length && secondElement.length) {
+        if (mathSymbol == "+") {
+          let result = Number(firstElement) + Number(secondElement);
+          onClear();
+          document.getElementById("text").innerHTML = result + "";
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <h1 id="text"></h1>
+    <h6 id="math"></h6>
+    <h2 id="text-2"></h2>
+    <div>
+      <button onclick="on1Click()">1</button>
+      <button onclick="on2Click()">2</button>
+      <button onclick="on3Click()">3</button>
+      <button onclick="onaddClick()">+</button>
+    </div>
+
+    <div>
+      <button onclick="on4Click()">4</button>
+      <button onclick="on5Click()">5</button>
+      <button onclick="on6Click()">6</button>
+      <button onclick="onsubClick()">-</button>
+    </div>
+
+    <div>
+      <button onclick="on7Click()">7</button>
+      <button onclick="on8Click()">8</button>
+      <button onclick="on9Click()">9</button>
+      <button onclick="onmulClick()">*</button>
+    </div>
+    <div>
+      <button onclick="onEqualClick()">=</button>
+      <button onclick="ondivClick()">/</button>
+      <button onclick="onClear()">Clear</button>
+    </div>
+  </div>
+</body>
