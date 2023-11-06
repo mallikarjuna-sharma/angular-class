@@ -131,7 +131,24 @@
     }
 
     function onaddClick() {
+      let firstEle = document.getElementById("text").innerText;
+      if (!firstEle.length) {
+        document.getElementById("text").innerHTML = "create First Value";
+        return;
+      }
       document.getElementById("math").innerHTML = "+";
+    }
+
+    function onsubClick() {
+      document.getElementById("math").innerHTML = "-";
+    }
+
+    function onmulClick() {
+      document.getElementById("math").innerHTML = "*";
+    }
+
+    function ondivClick() {
+      document.getElementById("math").innerHTML = "/";
     }
 
     function onEqualClick() {
@@ -140,11 +157,34 @@
       let mathSymbol = document.getElementById("math").innerText;
 
       if (firstElement.length && secondElement.length) {
+
+        
         if (mathSymbol == "+") {
           let result = Number(firstElement) + Number(secondElement);
           onClear();
           document.getElementById("text").innerHTML = result + "";
         }
+
+        if (mathSymbol == "-") {
+          let result = Number(firstElement) - Number(secondElement);
+          onClear();
+          document.getElementById("text").innerHTML = result + "";
+        }
+
+        if (mathSymbol == "*") {
+          let result = Number(firstElement) * Number(secondElement);
+          onClear();
+
+          document.getElementById("text").innerHTML = result + "";
+        }
+
+        if (mathSymbol == "/") {
+          let result = Number(firstElement) / Number(secondElement);
+          onClear();
+          document.getElementById("text").innerHTML = result + "";
+        }
+     
+     
       }
     }
   </script>
@@ -152,9 +192,12 @@
 
 <body>
   <div>
+
+
     <h1 id="text"></h1>
     <h6 id="math"></h6>
     <h2 id="text-2"></h2>
+
     <div>
       <button onclick="on1Click()">1</button>
       <button onclick="on2Click()">2</button>
