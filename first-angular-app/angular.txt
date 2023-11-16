@@ -1,0 +1,39 @@
+
+/ base-dir
+
+1. .vscode is auto created folder and completely related to vscode editor and doesnt belong to angular app as its own
+2. node_module is auto created folder based on packages which we declare in package json
+3. src is source folder in which we develop our angular app . all components and contents will be in side source folder
+4. .gitignore related to git hub which is code repository
+5. angular.json is the configuration file for angular app and typescript.
+6. package.json manages all packages installed for the app and it has versioning and it takes care of runing the app and testing and commands related to it
+7. README is documentation file for angular app
+8. tsconfig.json is configuration file for typescript
+9. tsconfig.spec file is a test file for typescript configuration
+10. *.spec.* these files are test files
+
+/ src-dir
+
+11. app folder contains basic/root application component
+12. assests contains images / svgs / static contents for our application 
+13. icon for browser tabs
+14. index.html is the entry file and single html file for base applicaiton 
+15. integrates typescript components into html 
+16. style.css is just a css files for application to get started.
+
+
+/ src/app/
+
+17. app-routing  All configuration with respect to applicaiton routes -> /login , /signup , /order-delivery , /guide/standalone-components
+18. app-module All configuration with respect to applicaiton structure 
+
+19. app.component.css css stylesheet for `app` component 
+20. app.component.html is the html file for `app` component
+21. app.component.spec.ts is the test file for `app` component
+22. app.component.ts is the configuration file for `app` component
+
+.Dot files
+
+23. .Dot Files starts with .before the file name . No changes needed in those files untill configuration changes are needed .
+
+24. Component -> group of html element or functionality which can be re used.

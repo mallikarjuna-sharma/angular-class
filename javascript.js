@@ -20,6 +20,42 @@ let intergerName = 123123123;
 let arrayName = [1, 2, 3, 4, 5, 6, false, true, "good"];
 let booleanName = true;
 let booName = false;
+
+let userObj1 = {
+  std: 10,
+  height: 100,
+  weight: 50,
+  marks: [23, 42, 34, 76, 23, 21, 56, 34],
+  color: "brown",
+  isPassed: true,
+  isInjured: false,
+  medicalId: "8982312",
+  admissionNumber: "8823432",
+};
+
+
+let classRoom1 = {
+  userObj1,
+  userObj2,
+  userObj3,
+  userObj4,
+  userObj5,
+}
+
+let classRoom2 = {
+  userObj1,
+  userObj2,
+  userObj3,
+  userObj4,
+  userObj5,
+}
+
+
+let school = {
+  classRoom1,
+  classRoom2
+}
+
 // arguments
 // functions
 // varialbe declaration
@@ -52,7 +88,6 @@ function handleDarkClick() {
 }
 
 function handleSubmitForm() {
-
   let age = document.getElementById("age").value;
   let dob = document.getElementById("dob").value;
 
@@ -60,13 +95,12 @@ function handleSubmitForm() {
   console.log(dob);
 }
 
-// user given inputs -> Js variables 
+// user given inputs -> Js variables
 // user given events -> Js functions
 
 // document
 // how to get element from document
-// how to set value to a html document 
+// how to set value to a html document
 // how to call a function on user click
-// how to get value from html document 
-// how to apply styles from document 
-
+// how to get value from html document
+// how to apply styles from document
