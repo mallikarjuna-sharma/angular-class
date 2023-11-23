@@ -1,83 +1,97 @@
 {
-    "angular-class" : {
-        "software": ["vs-code","notepad","online-html-editor", "node-js", "npm" , "github" , "netlify","postman"],
-        "html":  [
-            "html-tags",
-            "html-attributes",
-            " image tags , inline tags , header tags , body tags , head tags , link tags (used for css and js linking) ",
-            "rendering html in browser and inspecting it",
-            "inpecting element tab in chrome dev tools",
-            "inline style attribute for html tags",
-            "syntax for styles in html"
-        ],
-        "css" : [
-            "inline css with height , width , border , border -radius , box -shows ",
-            "creating css files and declaring css classes in it and using in html",
-            "linking html and css file though link tag in head",
-            "using class attribute in html tag and apply styles",
-            "using complex css from online",
-            "flex concepts flex-direction, justify content , alignments",
-            "how to center a div and how to align things using flex box",
-            "css units like px, vh, vw , rem , em , %",
-            "fonts and sample font types"
-        ],
-        "html-css-design" : [
-            "swiggy home page ",
-            "facebook login page",
-            "google home page"
-        ],
-        "java-script" : [
-            " basic syntax of js ",
-            " data types in java script ",
-            " declaring a variable in js assigning value to variable",
-            " for loops and if else conditions ",
-            " how to write method or functions in js",
-            " onclick in html attribute    ",
-            " calling a js method from html and returning the value",
-            " browser java script objects like window and document ",
-            " creating js files and linking to html via script tag",
-            " coded js online for data types samples boolean , json , array , string , int",
-            " how to get value and set value to html using document object in js",
-            " how to get window sizes , history , onload functions from window object "
-        ],
-        "node-javascript": [
-            "installing node and creating node application using npm",
-            "learning package.json and packages in npm",
-            "using npm packages for time convertions , sentence summary , npmjs website and paackages in it",
-            "instaling packages, creating version, decription of node application and running node app",
-            "how to declare functions and pass arguments to functions"
-        ],
-        "type-script" : [
-            " what is type declaration , how to decalre a type ",
-            " complied ts into js  using ts complier",
-            " decalre a variable in ts"
-        ],
-        "angular" : [
-            " how to setup angular app",
-            " installing angular cli",
-            " runnnig basic angular application",
-            " angular file structure",
-            " routing in angular",
-            " creating components in angular",
-            " using material ui in angular",
-            " change html and link css and ts",
-            " how to create a component",
-            " linking html and ts using component class",
-            " created spotify mock app using anyapi ",
-            " how to build the application"
-        ],
-        "github":[
-            "create git hub repo",
-            "git commit and pull and push in git and check in repo",
-            "checking git hub changes"
-        ],
-        "netlify":[
-            " how to link github and netlify ",
-            " created new site and deployed the angular application to a url",
-            " basic configuration and build / deploy commands in netlify"
-        ],
-        "tools" : [
-            "chrome dev tools"
-        ]
+  "angular-class": {
+    "software": [
+      "vs-code",
+      "notepad",
+      "online-html-editor",
+      "node-js",
+      "npm",
+      "github",
+      "netlify",
+      "postman"
+    ],
+    "html": [
+      "html-tags",
+      "html-attributes",
+      " image tags , inline tags , header tags , body tags , head tags , link tags (used for css and js linking) ",
+      "rendering html in browser and inspecting it",
+      "inpecting element tab in chrome dev tools",
+      "inline style attribute for html tags",
+      "syntax for styles in html"
+    ],
+    "css": [
+      "inline css with height , width , border , border -radius , box -shows ",
+      "creating css files and declaring css classes in it and using in html",
+      "linking html and css file though link tag in head",
+      "using class attribute in html tag and apply styles",
+      "using complex css from online",
+      "flex concepts flex-direction, justify content , alignments",
+      "how to center a div and how to align things using flex box",
+      "css units like px, vh, vw , rem , em , %",
+      "fonts and sample font types"
+    ],
+    "html-css-design": [
+      "swiggy home page ",
+      "facebook login page",
+      "google home page"
+    ],
+    "java-script": [
+      " basic syntax of js ",
+      " data types in java script ",
+      " declaring a variable in js assigning value to variable",
+      " for loops and if else conditions ",
+      " how to write method or functions in js",
+      " onclick in html attribute    ",
+      " calling a js method from html and returning the value",
+      " browser java script objects like window and document ",
+      " creating js files and linking to html via script tag",
+      " coded js online for data types samples boolean , json , array , string , int",
+      " how to get value and set value to html using document object in js",
+      " how to get window sizes , history , onload functions from window object "
+    ],
+    "node-javascript": [
+      "installing node and creating node application using npm",
+      "learning package.json and packages in npm",
+      "using npm packages for time convertions , sentence summary , npmjs website and paackages in it",
+      "instaling packages, creating version, decription of node application and running node app",
+      "how to declare functions and pass arguments to functions"
+    ],
+    "type-script": [
+      " what is type declaration , how to decalre a type ",
+      " complied ts into js  using ts complier",
+      " decalre a variable in ts"
+    ],
+    "angular": [
+      " how to setup angular app",
+      " installing angular cli",
+      " runnnig basic angular application",
+      " angular file structure",
+      " routing in angular",
+      " creating components in angular",
+      " using material ui in angular",
+      " change html and link css and ts",
+      " how to create a component",
+      " linking html and ts using component class",
+      " created spotify mock app using anyapi ",
+      " how to build the application",
+      " Inspecting network call in tools and take auth obj in anyapi"
+    ],
+    "github": [
+      "create git hub repo",
+      "git commit and pull and push in git and check in repo",
+      "checking git hub changes"
+    ],
+    "netlify": [
+      " how to link github and netlify ",
+      " created new site and deployed the angular application to a url",
+      " basic configuration and build / deploy commands in netlify"
+    ],
+    "postman": [
+      "checking spotify apis in postman with auth object",
+      "using get and post request in post man"
+    ],
+    "tools": {
+      "chrome-dev-tools": ["Elements tab", "Console Tab", "Network Tab"]
     }
+  }
 }
